@@ -1,0 +1,125 @@
+// WEEK 4.
+// WRTING AND OBJECT.
+let student = {
+  name: 'Haruna Mohammed',
+  age: 28,
+  gender: 'female',
+  class: 'primary 6'
+}
+console.log(student.name);
+
+
+class profileTemplate{
+  constructor(name,email,address,password,age){
+    this.name= name
+    this.email =email
+    this.address= address
+    this.password= password
+    this.age= age
+  }
+}
+
+const user1 = new profileTemplate('Ema','emau@gmail.com','Tema com 22','agsuwcxc',20)
+console.log(user1);
+
+const user2 = new profileTemplate('mark','maremau@gmail.com','Tema com 2','sftwcxc',40)
+console.log(user2);
+
+
+class Car{
+  constructor(wheels,stear,seat,engine){
+    this.wheels =wheels
+    this.stear =stear
+    this.seat= seat
+    this.engine= engine
+  }
+}
+
+// INHERITANCE
+
+class PickUp extends Car{
+  features() {
+    return this.wheels + "" + this.engine + " "+ this.seat
+  }
+
+}
+
+const hilux = new PickUp(4,1,5,1);
+console.log(hilux.features());
+
+
+
+let car= {
+  brand: 'Toyota',
+  model2: 'corolla',
+  year : 2020
+}
+
+// console.log("My car is a" +' ' + (car.brand), (car.model))
+console.log('My car is',car.brand,car.model)
+
+
+
+let book ={
+  titles :'JavaScript Basics',
+  pages:150
+
+}
+
+book.pages=200
+console.log(book)
+
+
+let students = {
+  name: 'Ama',
+  age:21
+
+
+};
+students.course='computer Science'
+console.log(students);
+
+
+
+let phone ={
+  brand:'Samsung',
+  model:'Galaxy S21',
+  price:500
+};
+
+delete(phone.price)
+console.log(phone)
+
+
+let person={
+  name:'Kwame',
+  hobbies:['Swinming','Gaming','Singing'],
+
+};
+console.log(person.hobbies[1]);
+
+
+let student1 = {
+  name: 'Haruna Mohammed',
+  age: 28,
+  email: 'rumadstar@gmail.com',
+  
+}
+console.log(student1.name);
+
+let profile={
+  name:'Sam Generals',
+  tutor:'codetrain',
+  course: 'Javascript'
+
+};
+console.log(profile);
+
+
+let Decorder={
+  name: 'StarTimes',
+  bouquet: 'supper',
+  price: 200
+};
+console.log(Decorder);
+
